@@ -83,11 +83,16 @@
             width: 100%;
         }
 
-        #TLE_grade, #pe_grade, #music_grade, #ict_grade, #ve_grade, #LT_grade, english_grade, #math_grade, #science_grade, #filipino_grade, #history_grade, #philo_grade {
-            width: 250px;
+        #TLE_grade, #pe_grade, #music_grade, #ict_grade, #ve_grade, #LT_grade {
+            width: 250px
         }
+
+        #english_grade, #math_grade, #science_grade, #filipino_grade, #history_grade, #philo_grade {
+            width: 250px
+        }
+
         button[type="submit"] {
-            width: 150px;
+            width: 350px;
         }
     </style>
 </head>
@@ -195,39 +200,31 @@
                             <input type="number" class="form-control" id="LT_grade" placeholder="Enter your LT grade">
                         </form>
                     </div>
-                 
+                
                     <br>
+                </div>
 
+                <form>
                     <center>
-                        <button type="submit" py-click="calculate_gwa" class="btn btn-success">Calculate GWA</button>
-                    </center>
-                    
-                    <br>
-                    <center>
+                        <button type="submit" py-click="calculate_gwa" class="btn btn-success">Calculate GWA</button> 
+
+                        <br><br>
+
+
                         <button type="submit" py-click="summary" class="btn btn-danger">Summary of Grades</button>
                     </center>
+                </form>
 
-                    <br>
-
-                    <center>
-                        <div class="results-container">
-                            <p id="output"></p>
-                            <p id="summary"></p>
-                        </div>
-                    </center>
-                </div>
+                <center>
+                    <div class="results-container">
+                        <p id="output"></p>
+                        <p id="summary"></p>
+                    </div>
+                </center>
             </div>
         </center>
 	</main>
 
-	<footer>
-        <p style="text-align: center; margin-top: 20px;">
-            &copy; 2025 Sanctus de Manila University. All rights reserved. <br>
-            &copy; Developed by Gabrielledamondamon. <br>
-            &copy; Assisted by AI Assistant.
-        </p>
-    </footer>
-	
     <script type="py" src="main2.py"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
